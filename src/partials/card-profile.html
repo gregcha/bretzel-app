@@ -1,0 +1,53 @@
+<div class="card mb-3">
+  <div class="card-body">
+    <div class="row align-items-center">
+      <div class="col-auto">
+
+        <!-- Avatar -->
+        <a href="#" class="avatar avatar-lg">
+          <img src="@@webRoot/assets/img/avatars/avatar-@@id.jpg" alt="..." class="avatar-img rounded-circle">
+        </a>
+
+      </div>
+      <div class="col ms-n2">
+
+        <!-- Title -->
+        <h4 class="mb-1">
+          <a href="#" class="text-bretzel-dark-hover">@@fullName</a>
+        </h4>
+
+        <!-- Text -->
+        <p class="small mb-1">
+          @@oneLiner
+        </p>
+
+        <!-- Status -->
+        <p class="small text-muted mb-0">
+          @@if(section == "my-bretzels"){
+            <img src="@@webRoot/assets/img/picto-bretzels.svg" alt="..." class="avatar-img avatar-xs" style="width:14px; height:auto"> @@date
+          }
+          @@if(section == "my-matches"){
+            <img src="@@webRoot/assets/img/picto-matches.svg" alt="..." class="avatar-img avatar-xs" style="width:14px; height:auto"> @@date
+          }
+        </p>
+
+      </div>
+
+      <div class="col-auto">
+
+        @@if(section == "my-bretzels"){
+          <!-- Button -->
+          <a href="#!" class="btn btn-sm btn-bretzel-light d-none d-md-inline-block ">
+            Remove bretzel
+          </a>
+        }
+        @@if(section == "my-matches"){
+          <!-- Button -->
+          <a href="#!" class="btn btn-sm btn-matches-light d-none d-md-inline-block ">
+            Remove match
+          </a>
+        }
+      </div>
+    </div> <!-- / .row -->
+  </div> <!-- / .card-body -->
+</div>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "title": "Bretzel - Reiventing dating"
+    })
+  </head>
+  <body>
+
+    <!-- NAVIGATION
+    ================================================== -->
+    @@include("partials/navbar.html", {
+      "section": "my-matches"
+    })
+
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content mt-5">
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
+
+            <div class="header mt-md-5">
+              <div class="header-body">
+
+                <!-- Pretitle -->
+                <h6 class="header-pretitle">
+                  You have
+                </h6>
+
+                <!-- Title -->
+                <h1 class="header-title d-flex align-items-center">
+                  <img src="@@webRoot/assets/img/picto-matches.svg" alt="..." class="avatar-img avatar-xs mr-1" style="width:24px; height:auto">6 Matches
+                </h1>
+
+              </div>
+            </div>
+
+            @@include("partials/card-profile.html", {
+              "id"                 : "1",
+              "fullName"           : "Pauline Lenoir",
+              "oneLiner"           : "Head of Marketing at Datadog",
+              "date"               : "matched on June 19, 2021",
+              "section"            : "my-matches"
+            })
+
+            @@include("partials/card-profile.html", {
+              "id"                 : "4",
+              "fullName"           : "Cécile Cordier",
+              "oneLiner"           : "Sales Representative at Facebook",
+              "date"               : "matched on June 17, 2021",
+              "section"            : "my-matches"
+            })
+
+            @@include("partials/card-profile.html", {
+              "id"                 : "5",
+              "fullName"           : "Emmanuelle Legros",
+              "oneLiner"           : "Head of Marketing",
+              "date"               : "matched on June 12, 2021",
+              "section"            : "my-matches"
+            })
+
+            @@include("partials/card-profile.html", {
+              "id"                 : "8",
+              "fullName"           : "Lori Fox",
+              "oneLiner"           : "Head of Marketing",
+              "date"               : "matched on June 9, 2021",
+              "section"            : "my-matches"
+            })
+
+            @@include("partials/card-profile.html", {
+              "id"                 : "9",
+              "fullName"           : "Carla Roberts",
+              "oneLiner"           : "Head of Marketing",
+              "date"               : "matched on June 6, 2021",
+              "section"            : "my-matches"
+            })
+
+            @@include("partials/card-profile.html", {
+              "id"                 : "15",
+              "fullName"           : "Alexandra Andre",
+              "oneLiner"           : "Head of Marketing",
+              "date"               : "matched on June 3, 2021",
+              "section"            : "my-matches"
+            })
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>
+
+

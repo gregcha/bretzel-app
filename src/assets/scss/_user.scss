@@ -1,0 +1,153 @@
+//
+// user.scss
+// Use this to write your custom SCSS
+//
+
+.row {
+  margin: 0;
+}
+
+.btn-group-xs > .btn, .btn-xs {
+  font-size: 12px;
+  padding: 8px;
+  line-height: .5;
+  border-radius: .2rem;
+}
+
+.btn-soft-primary {
+  color: #2C7BE5;
+  background-color: #d5e5fa;
+}
+.btn-soft-primary[href]:hover, .btn-soft-primary[href]:focus {
+  color: #2C7BE5;
+  text-decoration: none;
+  background-color: #bed7f7;
+}
+
+@media (min-width: 768px) {
+  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container,
+  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-fluid,
+  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-sm,
+  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-md,
+  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-lg,
+  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-xl,
+  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container,
+  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-fluid,
+  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-sm,
+  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-md,
+  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-lg,
+  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-xl {
+    padding-left: 0px !important;
+    padding-right: 0px !important; } }
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.btn-bretzel-dark {
+  background-color: #F69A66;
+  color: $white;
+}
+
+.btn-matches-dark {
+  background-color: #AE2012;
+  color: $white;
+}
+
+.btn-bretzel-light {
+  background-color: #FEF8EF;
+  color: #F69A66;
+}
+
+.btn-matches-light {
+  background-color: #FFDFDB;
+  color: #AE2012;
+}
+
+.text-bretzel-dark {
+  color: #F69A66;
+}
+
+.text-bretzel-light {
+  color: #FEF8EF;
+}
+
+.text-bretzel-dark-hover {
+  &:hover {
+    color: #F69A66;
+  }
+}
+
+.nav-link.active:before {
+    border-bottom: 1px solid #F69A66 !important;
+}
+
+.nav-link-matches.active:before {
+    border-bottom: 1px solid #AE2012 !important;
+}
+
+
+.bretzel-switch {
+  input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 36px;
+    height: 20px;
+    background: #FFDFDB;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+  }
+
+  label:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+  }
+
+  input:checked + label {
+    background: #F69A66;
+  }
+
+  input:checked + label:after {
+    left: calc(100% - 3px);
+    transform: translateX(-100%);
+  }
+
+  label:active:after {
+    width: 26px;
+  }
+
+  // centering
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+}
+
+.popup {
+  position: absolute;
+  right: 0;
+  border: 1px solid #e3ebf6;
+  border-radius: 3px;
+  background-color: white;
+  width: 250px;
+  height: 500px;
+}
+
+

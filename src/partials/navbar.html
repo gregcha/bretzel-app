@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-md navbar-light fixed-top mb-2">
+  <div class="container">
+
+    <!-- Brand -->
+    <a class="navbar-brand" href="@@webRoot/index.html">
+      <img src="@@webRoot/assets/img/logo.svg" class="navbar-brand-img
+      mx-auto" style="width:140px">
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <!-- Nav -->
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item pr-3">
+          <a class="nav-link @@if(section =='my-bretzels'){active}" href="@@webRoot/my-bretzels.html" >
+            <img src="@@webRoot/assets/img/picto-bretzels.svg" alt="..." class="avatar-img avatar-xs mr-1" style="width:14px; height:auto">  My bretzels <span class="small muted">(17)</span>
+          </a>
+        </li>
+        <li class="nav-item pr-3">
+          <a class="nav-link nav-link-matches @@if(section =='my-matches'){active}" href="@@webRoot/my-matches.html">
+            <img src="@@webRoot/assets/img/picto-matches.svg" alt="..." class="avatar-img avatar-xs mr-1" style="width:14px; height:auto"> My matches <span class="small muted">(6)</span>
+          </a>
+        </li>
+        <li class="nav-item pr-3">
+          <a class="nav-link @@if(section =='preferences'){active}" href="@@webRoot/preferences.html">
+            <i class="fe fe-settings" style="min-width: 1rem;"></i> Preferences
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
