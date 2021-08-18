@@ -150,4 +150,22 @@
   height: 500px;
 }
 
+.onboarding {
+  background-color: #FEF8EF;
+  display: flex;
+  justify-content: space-between;
+  .onboarding-step {
+    text-align: left;
+    width: 100%;
+    margin: 8px;
+    padding: 16px;
+    background-color: #f8ebd9;
+    span {
+      font-size: 18px;
+      font-weight: bold;
+      color: #F69A66;
+    }
+  }
+}
+
 
