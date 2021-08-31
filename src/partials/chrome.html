@@ -14,7 +14,7 @@
         </a>
       </li>
       <li class="nav-item pr-3">
-        <a class="nav-link @@if(section =='preferences'){active}" href="#">
+        <a class="nav-link" href=".">
           <i class="fe fe-rotate-cw" style="min-width: 1rem;"></i>
         </a>
       </li>
@@ -26,10 +26,12 @@
 
     <!-- Nav -->
     <ul class="navbar-nav me-auto ml-3">
-      <li class="nav-item" style="position:relative;">
-        <a class="nav-link" href="#" >
+      <li class="nav-item" class="popup-toggle" style="position:relative;">
+        <a class="nav-link" href="#">
           <img src="@@webRoot/assets/img/picto-bretzels.svg" alt="..." class="avatar-img" style="width: 24px;">
         </a>
+        @@if(section =='popup-signed-in'){@@include("popup-signed-in.html")}
+        @@if(section =='popup-not-signed-in'){@@include("popup-not-signed-in.html")}
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#" >
@@ -37,7 +39,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link @@if(section =='preferences'){active}" href="@@webRoot/preferences.html">
+        <a class="nav-link" href=".">
           <i class="fe fe-more-vertical" style="width: 24px;"></i>
         </a>
       </li>

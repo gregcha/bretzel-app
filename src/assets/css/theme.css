@@ -11621,3 +11621,6 @@ a:focus, button:focus {
       font-size: 18px;
       font-weight: bold;
       color: #F69A66; }
+
+.hidden {
+  display: none; }
