@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "title": "Bretzel - Reiventing dating"
+    })
+  </head>
+  <body>
+
+    <!-- NAVIGATION
+    ================================================== -->
+    @@include("partials/navbar.html", {
+      "section": "metrics"
+    })
+
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content mt-6">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-lg-4 order-lg-2">
+            <div class="card mt-md-5">
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <h2>Get your statistics on Bretzel</h2>
+                    <p>
+                      Everytime you invite a friend and they join the Club, we give you a credit to update your stats. Use it whenever you want.
+                    </p>
+                    <div class="d-flex">
+                      <input type="text" class="form-control form-control-sm text-muted" id="exampleInputEmail1" value="https://bretzel.club/invite/6196H8176">
+                      <button type="submit" class="btn btn-sm btn-bretzel-dark ml-1" style="min-width: 40px;">
+                        <i class="fe fe-copy" style="min-width: 1rem; color: white;"></i>
+                        <!-- <a href="@@webRoot/metrics.html" style="color: white;">Copy link</a> -->
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <hr>
+                <p class="">
+                  <span class="text-muted">Number of friends invited</span><br>
+                  12 friends
+                </p>
+                <p class="">
+                  <span class="text-muted">Number of available credits</span><br>
+                  3 credits
+                </p>
+                <p class="mb-1">
+                  <span class="text-muted">Last update on</span><br>
+                  September 21, 2021 at 20:56
+                </p>
+                <hr>
+                <button type="submit" class="btn btn-sm btn-bretzel-dark ml-1" style="min-width: 40px;">
+                  <i class="fe fe-rotate-ccw" style="min-width: 1rem; color: white;"></i>
+                  <a href="@@webRoot/metrics.html" style="color: white;">Update my stats</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-8 order-lg-1">
+
+            <ul class="nav nav-tabs mb-5 mt-md-5">
+              <li class="nav-item">
+                <a class="nav-link active" href="#!">By others</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">By me</a>
+              </li>
+            </ul>
+
+            <div class="card">
+              <div class="card-body">
+
+                <!-- List group -->
+                <div class="list-group list-group-flush my-n3">
+
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col ml-n2">
+                        <!-- Title -->
+                        <h4 class="mb-1">
+                          <a href="@@webRoot/onboarding-not-signed-in.html">
+                            <i class="fe fe-eye text-primary" style="min-width: 1rem;"></i>
+                            Profile views
+                          </a>
+                        </h4>
+                        <p class="text-muted mb-0">Number of users who saw your profile</p>
+                      </div>
+                      <div class="col-auto">
+                        <!-- My Network -->
+                        <p class="small mb-0 text-right">
+                          <span class="text-muted">My network</span><br>
+                          1 237 views
+                        </p>
+                      </div>
+                      <div class="col-auto">
+                        <!-- All users -->
+                        <p class="small mb-0 text-right">
+                          <span class="text-muted">All users</span><br>
+                          3 466 views
+                        </p>
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                  <div class="chart mt-5">
+                    <canvas class="chart-canvas" id="feedChart"></canvas>
+                  </div>
+
+                  <script>
+                    new Chart('feedChart', {
+                      type: 'bar',
+                      options: {
+                        scales: {
+                          y: {
+                            ticks: {
+                              callback: function(value) {
+                                return 'kk' + value + 'lk';
+                              }
+                            }
+                          }
+                        }
+                      },
+                      data: {
+                        labels: ['Aug 8', 'Aug 15', 'Aug 22', 'Aug 29', 'Sep 5', 'Sep 12', 'Sep 19', 'Sep 26', 'Oct 3', 'Oct 10', 'Oct 17', 'Oct 24'],
+                        datasets: [{
+                          label: 'Bretzels',
+                          data: [25, 20, 30, 22, 17, 10, 18, 26, 28, 26, 20, 32]
+                        }]
+                      }
+                    });
+                  </script>
+                </div>
+
+              </div> <!-- / .card-body -->
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+
+                <!-- List group -->
+                <div class="list-group list-group-flush my-n3">
+
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col ml-n2">
+                        <!-- Title -->
+                        <h4 class="mb-1">
+                          <a href="@@webRoot/onboarding-not-signed-in.html">
+                            <i class="fe fe-arrow-down-circle text-success" style="min-width: 1rem;"></i>
+                            Bretzels received
+                          </a>
+                        </h4>
+                        <p class="text-muted mb-0">Number of bretzels received</p>
+                      </div>
+                      <div class="col-auto">
+                        <!-- My Network -->
+                        <p class="small mb-0 text-right">
+                          <span class="text-muted">My network</span><br>
+                          12 <img src="@@webRoot/assets/img/picto.svg" alt="..." class="avatar-img avatar-xs mr-1" style="width:14px; height:auto">
+                        </p>
+                      </div>
+                      <div class="col-auto">
+                        <!-- All users -->
+                        <p class="small mb-0 text-right">
+                          <span class="text-muted">All users</span><br>
+                          74 <img src="@@webRoot/assets/img/picto.svg" alt="..." class="avatar-img avatar-xs mr-1" style="width:14px; height:auto">
+                        </p>
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                </div>
+
+              </div> <!-- / .card-body -->
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+
+                <!-- List group -->
+                <div class="list-group list-group-flush my-n3">
+
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col ml-n2">
+                        <!-- Title -->
+                        <h4 class="mb-1">
+                          <a href="@@webRoot/onboarding-not-signed-in.html">
+                            <i class="fe fe-x-circle text-danger" style="min-width: 1rem;"></i>
+                            Bretzels taken back
+                          </a>
+                        </h4>
+                        <p class="text-muted mb-0">Number of bretzels taken back from you</p>
+                      </div>
+                      <div class="col-auto">
+                        <!-- My Network -->
+                        <p class="small mb-0 text-right">
+                          <span class="text-muted">My network</span><br>
+                          3 <img src="@@webRoot/assets/img/picto.svg" alt="..." class="avatar-img avatar-xs mr-1" style="width:14px; height:auto">
+                        </p>
+                      </div>
+                      <div class="col-auto">
+                        <!-- All users -->
+                        <p class="small mb-0 text-right">
+                          <span class="text-muted">All users</span><br>
+                          9 <img src="@@webRoot/assets/img/picto.svg" alt="..." class="avatar-img avatar-xs mr-1" style="width:14px; height:auto">
+                        </p>
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+                </div>
+
+              </div> <!-- / .card-body -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

@@ -16,14 +16,54 @@
 
     <!-- MAIN CONTENT
     ================================================== -->
-    <div class="main-content mt-7">
+    <div class="main-content mt-6">
 
       <div class="container">
 
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-10 col-xl-8">
+        <div class="row">
 
-            <div class="header-body">
+          <div class="col-12 col-lg-4 order-lg-2">
+            <div class="card mt-md-5">
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <h2>Get your statistics on Bretzel</h2>
+                    <p>
+                      Everytime you invite a friend and they join the Club, we give you a credit to update your stats. Use it whenever you want.
+                    </p>
+                    <div class="d-flex">
+                      <input type="text" class="form-control form-control-sm text-muted" id="exampleInputEmail1" value="https://bretzel.club/invite/6196H8176">
+                      <button type="submit" class="btn btn-sm btn-bretzel-dark ml-1" style="min-width: 40px;">
+                        <i class="fe fe-copy" style="min-width: 1rem; color: white;"></i>
+                        <!-- <a href="@@webRoot/metrics.html" style="color: white;">Copy link</a> -->
+                      </button>
+                    </div>
+                  </div>
+                </form>
+                <hr>
+                <p class="">
+                  <span class="text-muted">Number of friends invited</span><br>
+                  12 friends
+                </p>
+                <p class="">
+                  <span class="text-muted">Number of available credits</span><br>
+                  3 credits
+                </p>
+                <p class="mb-1">
+                  <span class="text-muted">Last update on</span><br>
+                  September 21, 2021 at 20:56
+                </p>
+                <hr>
+                <a href="@@webRoot/metrics.html" class="link-bretzel" style="color: #F69A66;">Visit my stats</a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-12 col-lg-8 order-lg-1">
+
+            <div class="header-body mt-md-4">
 
               <!-- Title -->
               <h3 class="header-title">
@@ -33,7 +73,7 @@
             </div>
 
             <!-- Enable notification -->
-            <div class="card-body">
+            <div class="card-body pl-0  pr-0">
               <div class="bretzel-switch d-flex">
                 <input type="checkbox" id="chrome-notification" /><label for="chrome-notification">Toggle</label>
                 <span class="ml-2">Enable browser notification</span>
@@ -44,7 +84,7 @@
             </div>
 
             <!-- Enable notification -->
-            <div class="card-body">
+            <div class="card-body pl-0  pr-0">
               <form>
                 <div class="form-group">
                   <div class="bretzel-switch d-flex">
@@ -71,7 +111,7 @@
             </div>
 
             <!-- Pause service -->
-            <div class="card-body">
+            <div class="card-body pl-0  pr-0">
               <div class="bretzel-switch d-flex">
                 <input type="checkbox" id="pause-service" /><label for="pause-service">Toggle</label>
                 <span class="ml-2">Pause service</span>
@@ -82,12 +122,12 @@
             </div>
 
             <!-- Delete my data -->
-            <div class="card-body">
+            <div class="card-body pl-0  pr-0">
               <label class="form-check-label" for="switch">Delete my account</label>
               <small class="form-text text-muted mt-2">
                 You don't have any bretzel account since we're using you Linkedin account to identify you. But feel free to erase your account data: your submitted bretzels and matches.
               </small>
-              <button type="submit" class="btn btn-matches-dark btn-sm mt-2">Remove all my data</button>
+              <button type="submit" class="btn btn-match-dark btn-sm mt-2">Remove all my data</button>
             </div>
 
 

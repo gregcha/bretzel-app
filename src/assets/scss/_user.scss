@@ -3,88 +3,60 @@
 // Use this to write your custom SCSS
 //
 
-.row {
-  margin: 0;
-}
-
-.btn-group-xs > .btn, .btn-xs {
-  font-size: 12px;
-  padding: 8px;
-  line-height: .5;
-  border-radius: .2rem;
-}
-
-.btn-soft-primary {
-  color: #2C7BE5;
-  background-color: #d5e5fa;
-}
-.btn-soft-primary[href]:hover, .btn-soft-primary[href]:focus {
-  color: #2C7BE5;
-  text-decoration: none;
-  background-color: #bed7f7;
-}
-
-@media (min-width: 768px) {
-  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container,
-  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-fluid,
-  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-sm,
-  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-md,
-  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-lg,
-  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-xl,
-  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container,
-  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-fluid,
-  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-sm,
-  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-md,
-  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-lg,
-  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-xl {
-    padding-left: 0px !important;
-    padding-right: 0px !important; } }
-
-.container-fluid {
-  padding-right: 0px;
-  padding-left: 0px;
-}
-
 .btn-bretzel-dark {
-  background-color: #F69A66;
-  color: $white;
+  background-color: $primary-500;
+  color: white;
+  &:hover {
+    color: white;
+    background-color: $primary-600;
+  }
 }
 
-.btn-matches-dark {
-  background-color: #AE2012;
-  color: $white;
+.btn-match-dark {
+  background-color: $secondary-500;
+  color: white;
+  &:hover {
+    color: white;
+    background-color: $secondary-600;
+  }
 }
 
 .btn-bretzel-light {
-  background-color: #FEF8EF;
-  color: #F69A66;
-}
-
-.btn-matches-light {
-  background-color: #FFDFDB;
-  color: #AE2012;
-}
-
-.text-bretzel-dark {
-  color: #F69A66;
-}
-
-.text-bretzel-light {
-  color: #FEF8EF;
-}
-
-.text-bretzel-dark-hover {
+  background-color: $primary-100;
+  color: $primary-500;
   &:hover {
-    color: #F69A66;
+    color: $primary-600;
+    background-color: $primary-200;
+  }
+}
+
+.btn-match-light {
+  background-color: $secondary-100;
+  color: $secondary-500;
+  &:hover {
+    color: $secondary-600;
+    background-color: $secondary-200;
+  }
+}
+
+.link-bretzel {
+  &:hover {
+    color: $primary-600;
+  }
+}
+
+.link-match {
+  &:hover {
+    color: $secondary-600;
   }
 }
 
 .nav-link.active:before {
-    border-bottom: 1px solid #F69A66 !important;
+    border-bottom: 1px solid $primary-500 !important;
 }
 
 .nav-link-matches.active:before {
-    border-bottom: 1px solid #AE2012 !important;
+    border-bottom: 1px solid $secondary-500 !important;
 }
 
 
@@ -100,7 +72,7 @@
     text-indent: -9999px;
     width: 36px;
     height: 20px;
-    background: #FFDFDB;
+    background: $primary-200;
     display: block;
     border-radius: 100px;
     position: relative;
@@ -113,13 +85,13 @@
     left: 3px;
     width: 14px;
     height: 14px;
-    background: #fff;
+    background: white;
     border-radius: 90px;
     transition: 0.3s;
   }
 
   input:checked + label {
-    background: #F69A66;
+    background: $primary-500;
   }
 
   input:checked + label:after {
@@ -151,7 +123,7 @@
 }
 
 .onboarding {
-  background-color: #FEF8EF;
+  background-color: $primary-100;
   display: flex;
   justify-content: space-between;
   .onboarding-step {
@@ -159,17 +131,25 @@
     width: 100%;
     margin: 8px;
     padding: 16px;
-    background-color: #f8ebd9;
+    background-color: $primary-200;
     span {
       font-size: 18px;
       font-weight: bold;
-      color: #F69A66;
+      color: $primary-500;
     }
   }
 }
 
 .hidden {
   display: none;
+}
+
+ .blurry {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
 
 

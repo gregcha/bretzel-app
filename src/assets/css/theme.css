@@ -11474,87 +11474,45 @@ a:focus, button:focus {
 .select2-selection__placeholder {
   color: #B1C2D9; }
 
-.row {
-  margin: 0; }
-
-.btn-group-xs > .btn, .btn-xs {
-  font-size: 12px;
-  padding: 8px;
-  line-height: .5;
-  border-radius: .2rem; }
-
-.btn-soft-primary {
-  color: #2C7BE5;
-  background-color: #d5e5fa; }
-
-.btn-soft-primary[href]:hover, .btn-soft-primary[href]:focus {
-  color: #2C7BE5;
-  text-decoration: none;
-  background-color: #bed7f7; }
-
-@media (min-width: 768px) {
-  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container,
-  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-fluid,
-  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-sm,
-  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-md,
-  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-lg,
-  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-xl,
-  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-sm,
-  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-md,
-  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-lg,
-  .navbar-vertical:not([style*="display: none"]) ~ .main-content .container-xl,
-  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container,
-  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-fluid,
-  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-sm,
-  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-md,
-  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-lg,
-  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-xl,
-  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-sm,
-  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-md,
-  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-lg,
-  .navbar-vertical-sm:not([style*="display: none"]) ~ .main-content .container-xl {
-    padding-left: 0px !important;
-    padding-right: 0px !important; } }
-
-
-.container-fluid,
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl {
-  padding-right: 0px;
-  padding-left: 0px; }
-
 .btn-bretzel-dark {
   background-color: #F69A66;
-  color: #FFFFFF; }
+  color: white; }
+  .btn-bretzel-dark:hover {
+    color: white;
+    background-color: #E88E5B; }
 
-.btn-matches-dark {
-  background-color: #AE2012;
-  color: #FFFFFF; }
+.btn-match-dark {
+  background-color: #FF4773;
+  color: white; }
+  .btn-match-dark:hover {
+    color: white;
+    background-color: #FF0C46; }
 
 .btn-bretzel-light {
-  background-color: #FEF8EF;
+  background-color: #FEF3ED;
   color: #F69A66; }
+  .btn-bretzel-light:hover {
+    color: #E88E5B;
+    background-color: #FBD7C2; }
 
-.btn-matches-light {
-  background-color: #FFDFDB;
-  color: #AE2012; }
+.btn-match-light {
+  background-color: #FFEAEF;
+  color: #FF4773; }
+  .btn-match-light:hover {
+    color: #FF0C46;
+    background-color: #FFC1CF; }
 
-.text-bretzel-dark {
-  color: #F69A66; }
+.link-bretzel:hover {
+  color: #E88E5B; }
 
-.text-bretzel-light {
-  color: #FEF8EF; }
-
-.text-bretzel-dark-hover:hover {
-  color: #F69A66; }
+.link-match:hover {
+  color: #FF0C46; }
 
 .nav-link.active:before {
   border-bottom: 1px solid #F69A66 !important; }
 
 .nav-link-matches.active:before {
-  border-bottom: 1px solid #AE2012 !important; }
+  border-bottom: 1px solid #FF4773 !important; }
 
 .bretzel-switch input[type=checkbox] {
   height: 0;
@@ -11566,7 +11524,7 @@ a:focus, button:focus {
   text-indent: -9999px;
   width: 36px;
   height: 20px;
-  background: #FFDFDB;
+  background: #FBD7C2;
   display: block;
   border-radius: 100px;
   position: relative; }
@@ -11578,7 +11536,7 @@ a:focus, button:focus {
   left: 3px;
   width: 14px;
   height: 14px;
-  background: #fff;
+  background: white;
   border-radius: 90px;
   transition: 0.3s; }
 
@@ -11608,7 +11566,7 @@ a:focus, button:focus {
   height: 500px; }
 
 .onboarding {
-  background-color: #FEF8EF;
+  background-color: #FEF3ED;
   display: flex;
   justify-content: space-between; }
   .onboarding .onboarding-step {
@@ -11616,7 +11574,7 @@ a:focus, button:focus {
     width: 100%;
     margin: 8px;
     padding: 16px;
-    background-color: #f8ebd9; }
+    background-color: #FBD7C2; }
     .onboarding .onboarding-step span {
       font-size: 18px;
       font-weight: bold;
@@ -11624,3 +11582,9 @@ a:focus, button:focus {
 
 .hidden {
   display: none; }
+
+.blurry {
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); }

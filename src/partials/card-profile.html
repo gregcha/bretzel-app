@@ -13,7 +13,12 @@
 
         <!-- Title -->
         <h4 class="mb-1">
-          <a href="#" class="text-bretzel-dark-hover">@@fullName</a>
+          @@if(section == "my-bretzels"){
+            <a href="#" class="link-bretzel">@@fullName</a>
+          }
+          @@if(section == "my-matches"){
+            <a href="#" class="link-match">@@fullName</a>
+          }
         </h4>
 
         <!-- Text -->
@@ -24,10 +29,10 @@
         <!-- Status -->
         <p class="small text-muted mb-0">
           @@if(section == "my-bretzels"){
-            <img src="@@webRoot/assets/img/picto-bretzels.svg" alt="..." class="avatar-img avatar-xs" style="width:14px; height:auto"> @@date
+            <img src="@@webRoot/assets/img/picto.svg" alt="..." class="avatar-img avatar-xs" style="width:14px; height:auto"> @@date
           }
           @@if(section == "my-matches"){
-            <img src="@@webRoot/assets/img/picto-matches.svg" alt="..." class="avatar-img avatar-xs" style="width:14px; height:auto"> @@date
+            <img src="@@webRoot/assets/img/match.svg" alt="..." class="avatar-img avatar-xs" style="width:14px; height:auto"> @@date
           }
         </p>
 
@@ -43,7 +48,7 @@
         }
         @@if(section == "my-matches"){
           <!-- Button -->
-          <a href="#!" class="btn btn-sm btn-matches-light d-none d-md-inline-block ">
+          <a href="#!" class="btn btn-sm btn-match-light d-none d-md-inline-block ">
             Remove match
           </a>
         }
