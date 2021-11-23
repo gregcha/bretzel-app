@@ -63,71 +63,77 @@
 
           <div class="col-12 col-lg-8 order-lg-1">
 
-            <div class="header-body mt-md-4">
-
-              <!-- Title -->
-              <h3 class="header-title">
-                Notifications
-              </h3>
-
-            </div>
-
-            <!-- Enable notification -->
-            <div class="card-body pl-0  pr-0">
-              <div class="bretzel-switch d-flex">
-                <input type="checkbox" id="chrome-notification" /><label for="chrome-notification">Toggle</label>
-                <span class="ml-2">Enable browser notification</span>
-              </div>
-              <small class="form-text text-muted mt-2">
-                Activate this option if you wish to receive a browser notification for every new match.
-              </small>
-            </div>
-
-            <!-- Enable notification -->
-            <div class="card-body pl-0  pr-0">
-              <form>
-                <div class="form-group">
-                  <div class="bretzel-switch d-flex">
-                    <input type="checkbox" id="email-notification" /><label for="email-notification">Toggle</label>
-                    <span class="ml-2">Receive email notification</span>
-                  </div>
-                  <small class="form-text text-muted">
-                    Share your email if you wish to receive a notification in your mailbox for every new match.
-                  </small>
-                  <input type="email" class="form-control form-control-sm mt-3" id="exampleInputEmail1" placeholder="Enter email">
-                  <button type="submit" class="btn btn-bretzel-dark btn-sm mt-2">Submit</button>
+            <div class="card mt-md-5">
+              <div class="card-body">
+                <div class="header-body">
+                  <!-- Title -->
+                  <h3 class="header-title">
+                    Notifications
+                  </h3>
                 </div>
-              </form>
-            </div>
 
+                <!-- Enable notification -->
+                <div class="card-body pl-0  pr-0">
+                  <div class="bretzel-switch d-flex">
+                    <input type="checkbox" id="chrome-notification" /><label for="chrome-notification">Toggle</label>
+                    <span class="ml-2">Enable browser notification</span>
+                  </div>
+                  <small class="form-text text-muted mt-2">
+                    Activate this option if you wish to receive a browser notification for every new match.
+                  </small>
+                </div>
 
-            <div class="header-body">
-
-              <!-- Title -->
-              <h3 class="header-title">
-                Account
-              </h3>
-
-            </div>
-
-            <!-- Pause service -->
-            <div class="card-body pl-0  pr-0">
-              <div class="bretzel-switch d-flex">
-                <input type="checkbox" id="pause-service" /><label for="pause-service">Toggle</label>
-                <span class="ml-2">Pause service</span>
+                <!-- Enable notification -->
+                <div class="card-body pl-0 pr-0 pb-0">
+                  <form>
+                    <div class="form-group mb-0">
+                      <div class="bretzel-switch d-flex">
+                        <input type="checkbox" id="email-notification" /><label for="email-notification">Toggle</label>
+                        <span class="ml-2">Receive email notification</span>
+                      </div>
+                      <small class="form-text text-muted">
+                        Share your email if you wish to receive a notification in your mailbox for every new match.
+                      </small>
+                      <div class="d-flex">
+                        <input type="email" class="form-control form-control-sm mt-2" id="exampleInputEmail1" placeholder="Enter your email" style="max-width:500px">
+                        <button type="submit" class="btn btn-bretzel-dark btn-sm ml-2 mt-2">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
-              <small class="form-text text-muted mt-2">
-                If you wish to put our service on hold for a while — but keep your bretzels warm — simply toggle on this option. Whatever happens you won't have any match.
-              </small>
             </div>
 
-            <!-- Delete my data -->
-            <div class="card-body pl-0  pr-0">
-              <label class="form-check-label" for="switch">Delete my account</label>
-              <small class="form-text text-muted mt-2">
-                You don't have any bretzel account since we're using you Linkedin account to identify you. But feel free to erase your account data: your submitted bretzels and matches.
-              </small>
-              <button type="submit" class="btn btn-match-dark btn-sm mt-2">Remove all my data</button>
+            <div class="card mt-md-5">
+              <div class="card-body">
+                <div class="header-body">
+
+                  <!-- Title -->
+                  <h3 class="header-title">
+                    Account
+                  </h3>
+                </div>
+
+                <!-- Pause service -->
+                <div class="card-body pl-0  pr-0">
+                  <div class="bretzel-switch d-flex">
+                    <input type="checkbox" id="pause-service" /><label for="pause-service">Toggle</label>
+                    <span class="ml-2">Pause service</span>
+                  </div>
+                  <small class="form-text text-muted mt-2">
+                    If you wish to put our service on hold for a while — but keep your bretzels warm — simply toggle on this option. Whatever happens you won't have any match.
+                  </small>
+                </div>
+
+                <!-- Delete my data -->
+                <div class="card-body pl-0  pr-0 pb-0">
+                  <label class="form-check-label" for="switch">Delete my account</label>
+                  <small class="form-text text-muted mt-2">
+                    You don't have any bretzel account since we're using you Linkedin account to identify you. But feel free to erase your account data: your submitted bretzels and matches.
+                  </small>
+                  <button type="submit" class="btn btn-match-dark btn-sm mt-2">Remove all my data</button>
+                </div>
+              </div>
             </div>
 
 
