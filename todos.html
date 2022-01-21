@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="You've been swiping at random profiles for too long..." />
+    <link rel="icon" href="./favicon.ico"/>
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/feather/feather.css" />
+    <link rel="stylesheet" href="./assets/libs/flatpickr/dist/flatpickr.min.css" />
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css" />
+
+    <!-- Map -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" rel="stylesheet" />
+
+    <!-- Theme CSS -->
+    
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+      
+    <!-- Title -->
+    <title>Bretzel - Reiventing dating</title>
+
+  </head>
+  <body>
+
+    <!-- NAVIGATION
+    ================================================== -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top mb-2">
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href=".">
+          <img src="./assets/img/logo.svg" class="navbar-brand-img
+          mx-auto" style="width:140px">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Nav -->
+          <ul class="navbar-nav me-auto">
+    <!--         <li class="nav-item pr-3 mr-8">
+              <a class="nav-link active" href="./todos.html" >
+                <i class="fe fe-check-square" style="min-width: 1rem;"></i> To Do
+              </a>
+            </li> -->
+            <li class="nav-item pr-3">
+              <a class="nav-link " href="./my-bretzels.html" >
+                <img src="./assets/img/picto.svg" alt="..." class="avatar-img avatar-xs mr-1" style="width:14px; height:auto">  My bretzels <span class="small muted"></span>
+              </a>
+            </li>
+            <li class="nav-item pr-3">
+              <a class="nav-link nav-link-matches " href="./my-matches.html">
+                <img src="./assets/img/match.svg" alt="..." class="avatar-img avatar-xs mr-1" style="width:14px; height:auto"> My matches <span class="small muted"></span>
+              </a>
+            </li>
+            <li class="nav-item pr-3">
+              <a class="nav-link nav-link " href="./metrics.html">
+                <i class="fe fe-bar-chart-2" style="min-width: 1rem;"></i> My stats
+              </a>
+            </li>
+            <li class="nav-item pr-3">
+              <a class="nav-link " href="./preferences.html">
+                <i class="fe fe-settings" style="min-width: 1rem;"></i> Preferences
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+
+
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content  mt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
+
+            <div class="header mt-md-5">
+              <div class="header-body">
+                <!-- Title -->
+                <h1 class="header-title d-flex align-items-center">
+                  TO DOs
+                </h1>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body">
+
+                <!-- List group -->
+                <div class="list-group list-group-flush my-n3">
+
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col ml-n2">
+                        <!-- Title -->
+                        <h4 class="mb-1">
+                          <a href="./onboarding-not-signed-in.html">Onboarding modal: Not signed in</a>
+                        </h4>
+                      </div>
+                      <div class="col-auto">
+                        <!-- Status -->
+                        <p class="small mb-0">
+                          <span class="text-success">●</span> Done
+                        </p>
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col ml-n2">
+                        <!-- Title -->
+                        <h4 class="mb-1">
+                          <a href="./onboarding-signed-in.html">Onboarding modal: Signed in</a>
+                        </h4>
+                      </div>
+                      <div class="col-auto">
+                        <!-- Status -->
+                        <p class="small mb-0">
+                          <span class="text-success">●</span> Done
+                        </p>
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col ml-n2">
+                        <!-- Title -->
+                        <h4 class="mb-1">
+                          <a href="./popup-not-signed-in.html">Popup menu: Not signed in / Incognito</a>
+                        </h4>
+                      </div>
+                      <div class="col-auto">
+                        <!-- Status -->
+                        <p class="small mb-0">
+                          <span class="text-success">●</span> Done
+                        </p>
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col ml-n2">
+                        <!-- Title -->
+                        <h4 class="mb-1">
+                          <a href="./popup-signed-in.html">Popup menu: Signed in</a>
+                        </h4>
+                      </div>
+                      <div class="col-auto">
+                        <!-- Status -->
+                        <p class="small mb-0">
+                          <span class="text-success">●</span> Done
+                        </p>
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col ml-n2">
+                        <!-- Title -->
+                        <h4 class="mb-1">
+                          <a href="./my-bretzels.html">My Bretzels</a>
+                        </h4>
+                      </div>
+                      <div class="col-auto">
+                        <!-- Status -->
+                        <p class="small mb-0">
+                          <span class="text-success">●</span> Done
+                        </p>
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col ml-n2">
+                        <!-- Title -->
+                        <h4 class="mb-1">
+                          <a href="./my-matches.html">My Matches</a>
+                        </h4>
+                      </div>
+                      <div class="col-auto">
+                        <!-- Status -->
+                        <p class="small mb-0">
+                          <span class="text-success">●</span> Done
+                        </p>
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col ml-n2">
+                        <!-- Title -->
+                        <h4 class="mb-1">
+                          <a href="./preferences.html">Preferences</a>
+                        </h4>
+                      </div>
+                      <div class="col-auto">
+                        <!-- Status -->
+                        <p class="small mb-0">
+                          <span class="text-success">●</span> Done
+                        </p>
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+
+                  <div class="list-group-item">
+                    <div class="row align-items-center">
+                      <div class="col ml-n2">
+                        <!-- Title -->
+                        <h4 class="mb-1">
+                          <a href="./index.html">Metrics</a>
+                        </h4>
+                      </div>
+                      <div class="col-auto">
+                        <!-- Status -->
+                        <p class="small mb-0">
+                          <span class="text-success">●</span> Done
+                        </p>
+                      </div>
+                    </div> <!-- / .row -->
+                  </div>
+
+
+
+                </div>
+
+              </div> <!-- / .card-body -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
+    <script src="./assets/libs/autosize/dist/autosize.min.js"></script>
+    <script src="./assets/libs/chart.js/dist/Chart.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="./assets/libs/list.js/dist/list.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/select2/dist/js/select2.full.min.js"></script>
+    <script src="./assets/libs/chart.js/Chart.extension.js"></script>
+    <script src="https://kit.fontawesome.com/5a839d3cf9.js" crossorigin="anonymous"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+    <script src="./assets/js/dashkit.min.js"></script>
+
+
+  </body>
+</html>
