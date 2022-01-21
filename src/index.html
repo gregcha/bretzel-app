@@ -5,185 +5,23 @@
       "title": "Bretzel - Reiventing dating"
     })
   </head>
-  <body>
+  <body style="background-color: #fef8ef;" class="d-flex justify-content-center">
 
-    <!-- NAVIGATION
-    ================================================== -->
-    @@include("partials/navbar.html", {
-      "section": "index"
-    })
+    <div class="d-flex align-items-center justify-content-center flex-column">
 
+      <a href="@@webRoot" class="mb-5">
+        <img src="@@webRoot/assets/img/logo.svg" style="width:280px">
+      </a>
 
-    <!-- MAIN CONTENT
-    ================================================== -->
-    <div class="main-content  mt-5">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-10 col-xl-8">
+      <p class='text-muted' style='font-size:18px'>
+        You've been swiping at random profiles for too long...
+      </p>
 
-            <div class="header mt-md-5">
-              <div class="header-body">
-                <!-- Title -->
-                <h1 class="header-title d-flex align-items-center">
-                  TO DOs
-                </h1>
-              </div>
-            </div>
+      <h1>What if you could match your real life crushes?</h1>
 
-            <div class="card">
-              <div class="card-body">
-
-                <!-- List group -->
-                <div class="list-group list-group-flush my-n3">
-
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col ml-n2">
-                        <!-- Title -->
-                        <h4 class="mb-1">
-                          <a href="@@webRoot/onboarding-not-signed-in.html">Onboarding modal: Not signed in</a>
-                        </h4>
-                      </div>
-                      <div class="col-auto">
-                        <!-- Status -->
-                        <p class="small mb-0">
-                          <span class="text-success">●</span> Done
-                        </p>
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col ml-n2">
-                        <!-- Title -->
-                        <h4 class="mb-1">
-                          <a href="@@webRoot/onboarding-signed-in.html">Onboarding modal: Signed in</a>
-                        </h4>
-                      </div>
-                      <div class="col-auto">
-                        <!-- Status -->
-                        <p class="small mb-0">
-                          <span class="text-success">●</span> Done
-                        </p>
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col ml-n2">
-                        <!-- Title -->
-                        <h4 class="mb-1">
-                          <a href="@@webRoot/popup-not-signed-in.html">Popup menu: Not signed in / Incognito</a>
-                        </h4>
-                      </div>
-                      <div class="col-auto">
-                        <!-- Status -->
-                        <p class="small mb-0">
-                          <span class="text-success">●</span> Done
-                        </p>
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col ml-n2">
-                        <!-- Title -->
-                        <h4 class="mb-1">
-                          <a href="@@webRoot/popup-signed-in.html">Popup menu: Signed in</a>
-                        </h4>
-                      </div>
-                      <div class="col-auto">
-                        <!-- Status -->
-                        <p class="small mb-0">
-                          <span class="text-success">●</span> Done
-                        </p>
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col ml-n2">
-                        <!-- Title -->
-                        <h4 class="mb-1">
-                          <a href="@@webRoot/my-bretzels.html">My Bretzels</a>
-                        </h4>
-                      </div>
-                      <div class="col-auto">
-                        <!-- Status -->
-                        <p class="small mb-0">
-                          <span class="text-success">●</span> Done
-                        </p>
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col ml-n2">
-                        <!-- Title -->
-                        <h4 class="mb-1">
-                          <a href="@@webRoot/my-matches.html">My Matches</a>
-                        </h4>
-                      </div>
-                      <div class="col-auto">
-                        <!-- Status -->
-                        <p class="small mb-0">
-                          <span class="text-success">●</span> Done
-                        </p>
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col ml-n2">
-                        <!-- Title -->
-                        <h4 class="mb-1">
-                          <a href="@@webRoot/preferences.html">Preferences</a>
-                        </h4>
-                      </div>
-                      <div class="col-auto">
-                        <!-- Status -->
-                        <p class="small mb-0">
-                          <span class="text-success">●</span> Done
-                        </p>
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col ml-n2">
-                        <!-- Title -->
-                        <h4 class="mb-1">
-                          <a href="@@webRoot/index.html">Metrics</a>
-                        </h4>
-                      </div>
-                      <div class="col-auto">
-                        <!-- Status -->
-                        <p class="small mb-0">
-                          <span class="text-success">●</span> Done
-                        </p>
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-
-
-
-                </div>
-
-              </div> <!-- / .card-body -->
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-
+      <a href="https://chrome.google.com/webstore/detail/dilncohfamcdmpindiekhibhdilfjnnb" target="_blank" class="btn btn-bretzel-dark d-none d-md-inline-block mt-3" style='font-size:20px'>
+        Install chrome extension
+      </a>
     </div>
 
     <!-- JAVASCRIPT
